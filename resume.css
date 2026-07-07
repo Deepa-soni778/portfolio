@@ -1,0 +1,1594 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:
+    radial-gradient(circle at top left,#123b30 0%,#071410 35%,#030705 100%);
+
+    /* min-height:100vh; */
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* ===========================
+   RESUME SECTION
+=========================== */
+
+#resume{
+    width:100%;
+    min-height:100vh;
+
+    padding:70px 0;
+
+    background:
+    radial-gradient(circle at top left,#123b30 0%,#071410 35%,#020504 100%);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.resume-heading{
+
+    width:80vw;
+    max-width:1450px;
+
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.heading-icon{
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid rgba(83,255,129,.3);
+    background:rgba(20,60,45,.5);
+}
+.heading-icon i{
+    font-size:32px;
+    color:#53ff81;
+}
+
+/* ===========================
+   HEADING TEXT
+=========================== */
+
+.resume-heading h1{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+}
+
+/* ===========================
+   GREEN DOT
+=========================== */
+
+.dot{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:#32ff8a;
+
+    box-shadow:0 0 12px #32ff8a;
+
+}
+
+/* ===========================
+   LINE
+=========================== */
+
+.heading-line{
+
+    flex:1;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    rgba(70,255,150,.5),
+    transparent
+    );
+}
+/*=========================================
+          RESUME CARD
+==========================================*/
+
+/* .{
+    width:80vw;
+    margin:40px auto 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:45px;
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(13,53,41,.58),
+        rgba(7,24,18,.78)
+    );
+
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(83,255,129,.18);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 18px rgba(83,255,129,.12),
+    0 0 45px rgba(83,255,129,.06);
+
+    overflow:hidden;
+    position:relative;
+
+    transition:.4s;
+} */
+
+
+/*=========================================
+      CARD HOVER
+==========================================*/
+
+.resume-card:hover{
+
+    border-color:#5dffae;
+
+    box-shadow:
+
+    inset 0 1px 0 rgba(255,255,255,.12),
+
+    0 0 25px rgba(93,255,174,.25),
+
+    0 0 60px rgba(93,255,174,.10);
+
+}
+
+
+/*=========================================
+        LEFT SIDE
+==========================================*/
+
+
+.resume-preview{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/*=========================================
+     RESUME FRAME
+==========================================*/
+
+.preview-glow{
+
+    width:500px;
+
+    height:800px;
+
+    border-radius:24px;
+
+    padding:14px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(18,82,60,.55),
+    rgba(8,30,22,.85)
+    );
+
+    border:1px solid rgba(83,255,129,.22);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+
+    inset 0 1px 0 rgba(255,255,255,.08),
+
+    0 0 20px rgba(83,255,129,.15);
+
+}
+
+
+/*=========================================
+       RESUME IMAGE
+==========================================*/
+
+.preview-glow img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+}
+
+
+/*=========================================
+     IMAGE HOVER
+==========================================*/
+
+.preview-glow:hover{
+
+    transform:translateY(-6px);
+
+    transition:.4s;
+
+    box-shadow:
+
+    inset 0 1px 0 rgba(255,255,255,.08),
+
+    0 0 28px rgba(83,255,129,.25),
+
+    0 0 55px rgba(83,255,129,.12);
+
+}
+/*=========================================
+          RIGHT SIDE
+==========================================*/
+
+.resume-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/*=========================================
+          MY RESUME BADGE
+==========================================*/
+
+.resume-badge{
+
+    width:180px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(16,72,55,.55),
+    rgba(8,35,26,.75)
+    );
+
+    border:1px solid rgba(83,255,129,.18);
+
+    color:#67ffb3;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:28px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 15px rgba(83,255,129,.12);
+}
+
+.resume-badge i{
+
+    font-size:16px;
+
+    color:#5dffae;
+
+}
+
+
+/*=========================================
+          TITLE
+==========================================*/
+
+.resume-content h2{
+
+    font-size:38px;
+
+    line-height:52px;
+
+    color:white;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+
+/*=========================================
+          GREEN LINE
+==========================================*/
+
+.title-line{
+
+    width:500px;
+
+    height:4px;
+
+    border-radius:50px;
+
+    background:#5dffae;
+
+    box-shadow:
+    0 0 15px rgba(93,255,174,.5);
+
+    margin-bottom:28px;
+
+}
+
+
+/*=========================================
+          DESCRIPTION
+==========================================*/
+
+.resume-content p{
+
+    color:#b8d4c7;
+
+    font-size:17px;
+
+    line-height:32px;
+
+    margin-bottom:28px;
+
+}
+
+
+/*=========================================
+          DIVIDER
+==========================================*/
+
+.resume-content hr{
+
+    border:none;
+
+    height:1px;
+
+    background:
+    linear-gradient(
+    90deg,
+    rgba(83,255,129,.35),
+    transparent
+    );
+
+    margin-bottom:35px;
+
+}
+
+
+/*=========================================
+        DETAILS
+==========================================*/
+
+.resume-details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+/*=========================================
+      SINGLE DETAIL
+==========================================*/
+
+.detail{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+
+/*=========================================
+      ICON CIRCLE
+==========================================*/
+
+.detail-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(18,78,58,.65),
+    rgba(10,40,30,.85)
+    );
+
+    border:1px solid rgba(83,255,129,.18);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 12px rgba(83,255,129,.12);
+
+}
+
+
+.detail-icon i{
+
+    color:#5dffae;
+
+    font-size:18px;
+
+}
+
+
+/*=========================================
+      DETAIL TEXT
+==========================================*/
+
+.detail span{
+
+    color:#d8f8e7;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+/*=========================================
+        DOWNLOAD BUTTON
+==========================================*/
+
+.download-btn{
+
+    width:260px;
+
+    height:60px;
+
+    margin-top:45px;
+
+    border-radius:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:.4px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+    );
+
+    border:1px solid rgba(83,255,129,.25);
+
+    box-shadow:
+    0 0 18px rgba(34,197,94,.30),
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+    transition:.35s ease;
+
+}
+
+
+.download-btn i{
+
+    font-size:18px;
+
+}
+
+
+/*=========================================
+          BUTTON HOVER
+==========================================*/
+
+.download-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:
+    linear-gradient(
+    135deg,
+    #2ee66f,
+    #1ec45b
+    );
+
+    box-shadow:
+    0 0 28px rgba(46,230,111,.45),
+    0 0 60px rgba(46,230,111,.22);
+
+}
+
+
+
+
+/*=========================================
+          BADGE HOVER
+==========================================*/
+
+.resume-badge{
+
+    transition:.35s;
+
+}
+
+.resume-badge:hover{
+
+    border-color:#5dffae;
+
+    box-shadow:
+    0 0 18px rgba(83,255,129,.25);
+
+}
+
+
+/*=========================================
+          DETAIL HOVER
+==========================================*/
+
+.detail{
+
+    transition:.35s;
+
+}
+
+.detail:hover{
+
+    transform:translateX(8px);
+
+}
+
+.detail:hover .detail-icon{
+
+    border-color:#5dffae;
+
+    box-shadow:
+    0 0 18px rgba(83,255,129,.30);
+
+}
+
+
+/*=========================================
+          CARD HOVER
+==========================================*/
+
+.resume-card{
+
+    width:80vw;
+    max-width:1450px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:70px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(13,53,41,.60),
+    rgba(7,24,18,.85)
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(70,255,150,.25);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 25px rgba(70,255,150,.12),
+    0 0 60px rgba(70,255,150,.08);
+
+}
+/* .resume-card:hover{
+
+    transform:translateY(-5px);
+
+} */
+
+
+/*=========================================
+        RESPONSIVE
+==========================================*/
+
+@media(max-width:1100px){
+
+.resume-card{
+
+  
+
+    width:100%;
+    /* max-width:1450px; */
+
+    margin:0 auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:60px;
+
+    border:1px solid rgba(0,255,120,.25);
+
+    border-radius:30px;}
+
+}
+
+.resume-content{
+
+    align-items:center;
+
+}
+
+.resume-details{
+
+    grid-template-columns:1fr;
+
+    width:100%;
+
+}
+heading-line{
+
+    flex:1;
+
+    height:2px;
+
+    background:
+    linear-gradient(to right,#38ff90,transparent);
+
+}
+.resume-card{
+
+    width:80vw;
+    max-width:1450px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:70px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(13,53,41,.60),
+    rgba(7,24,18,.85)
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(70,255,150,.25);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 25px rgba(70,255,150,.12),
+    0 0 60px rgba(70,255,150,.08);
+
+}
+.preview-glow{
+
+    width:520px;
+
+    height:780px;
+
+    padding:14px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(18,82,60,.55),
+    rgba(8,30,22,.85)
+    );
+
+    border:1px solid rgba(60,255,154,.20);
+
+    box-shadow:
+    0 0 35px rgba(60,255,154,.18),
+    inset 0 0 30px rgba(60,255,154,.08);
+
+}
+.resume-paper{
+
+    width:100%;
+    height:100%;
+
+    border-radius:20px;
+
+    background:#0d1412;
+
+    border:2px solid #26ff84;
+
+    overflow:hidden;
+
+    box-shadow:
+    inset 0 0 30px rgba(38,255,132,.08);
+
+}
+.resume-content{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.resume-content h2{
+
+    font-size:42px;
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.resume-content p{
+
+    color:#d6d6d6;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+.download-btn{
+
+    width:250px;
+
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:35px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+    135deg,
+    #22ff8c,
+    #14d96d
+    );
+
+    box-shadow:
+    0 0 22px rgba(34,255,140,.35);
+
+    transition:.35s;
+
+}
+
+.download-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 40px rgba(34,255,140,.55);
+
+}
+
+/* Ye CSS tumhare screenshot ke dark glassmorphism + neon green design ke kaafi close dikhega. */
+
+
+
+
+
+
+#resume{
+
+    padding:70px 25px;
+
+}
+
+.resume-heading h1{
+
+    font-size:30px;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+
+.resume-content h2{
+
+    font-size:30px;
+
+    line-height:42px;
+
+}
+
+/* .preview-glow{
+
+    width:100%;
+
+    height:auto;
+
+} */
+
+.preview-glow img{
+
+    height:auto;
+
+}
+
+.download-btn{
+
+    width:100%;
+
+}
+
+
+/* ==========================
+   MINI RESUME PREVIEW
+========================== */
+
+.resume-preview{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:0;
+
+    background:transparent;
+
+    border:none;
+
+    box-shadow:none;
+
+}
+
+.resume-paper{
+
+    width:100%;
+
+    height:750px;
+
+    padding:38px;
+
+    background:#060c09;
+
+    border:2px solid #19ff74;
+
+    border-radius:28px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 0 18px rgba(0,255,120,.35),
+    0 0 50px rgba(0,255,120,.20),
+    inset 0 0 25px rgba(0,255,120,.10);
+
+}
+
+/* Soft Glow */
+
+.resume-paper::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:25px;
+
+    box-shadow:
+    inset 0 0 40px rgba(0,255,120,.12);
+
+    pointer-events:none;
+
+}
+
+/* ==========================
+      HEADER
+========================== */
+
+.resume-header{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:22px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid rgba(0,255,120,.25);
+
+}
+
+/* ==========================
+      BODY
+========================== */
+
+.resume-body{
+
+    display:grid;
+
+    grid-template-columns:46% 54%;
+
+    gap:20px;
+
+    margin-top:22px;
+
+}
+
+/* Left Column */
+
+.left-column{
+
+    border-right:1px solid rgba(0,255,120,.28);
+
+    padding-right:18px;
+
+}
+
+/* Right Column */
+
+.right-column h4{
+    margin-bottom:3px;
+}
+
+.right-column p{
+    margin-bottom:5px;
+    line-height:1.5;
+}
+
+/* Section */
+
+.section{
+
+    margin-bottom:24px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(0,255,120,.18);
+
+}
+
+.section:last-child{
+
+    border-bottom:none;
+
+    margin-bottom:0;
+
+}
+/*=====================================
+      HEADER LEFT
+======================================*/
+
+.left-head h1{
+
+    font-size:15px;
+    color:#ffffff;
+    font-weight:700;
+    margin-bottom:5px;
+
+}
+
+.left-head h1 span{
+
+    color:#2dfc74;
+
+}
+
+.left-head h3{
+
+    font-size:10px;
+    font-weight:500;
+    color:#d6d6d6;
+    margin-bottom:18px;
+
+}
+
+/*=====================================
+        CONTACT
+======================================*/
+
+.contact{
+
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+
+}
+
+.contact p{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:10px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+}
+
+.contact i{
+
+    color:#2dfc74;
+
+    width:10px;
+
+    font-size:14px;
+
+}
+
+/*=====================================
+        ABOUT ME
+======================================*/
+
+.right-head{
+
+    padding-left:35px;
+
+    border-left:1px solid rgba(45,252,116,.35);
+
+}
+
+.right-head h2{
+
+    color:#2dfc74;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+}
+
+.right-head p{
+
+    width:100%;
+
+    margin:0;
+
+    color:#d9d9d9;
+
+    font-size:10px;
+
+    line-height:1.7;
+    
+    display: flex;
+    justify-content: center;
+    text-align:center;
+
+    word-break:normal;
+
+    overflow-wrap:break-word;
+
+}
+
+/*=====================================
+      SMALL GLOW
+======================================*/
+
+.left-head,
+.right-head{
+
+    position:relative;
+
+}
+
+.left-head::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-10px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#2dfc74;
+
+    border-radius:50px;
+
+    box-shadow:0 0 10px #2dfc74;
+
+}
+/*======================================
+        SECTION HEADING
+=======================================*/
+
+.section h2{
+
+    color:#2dfc74;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:14px;
+
+    text-transform:uppercase;
+
+}
+
+/*======================================
+        SUB HEADING
+=======================================*/
+
+.section h4{
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+    margin-bottom:6px;
+
+}
+
+/*======================================
+        PARAGRAPH
+=======================================*/
+
+.section p{
+
+    color:#d6d6d6;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+    margin-bottom:6px;
+
+}
+
+/*======================================
+        SKILLS LIST
+=======================================*/
+
+.section ul{
+
+    list-style:none;
+
+    margin-top:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.section ul li{
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+/* Green Bullet */
+
+.section ul li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:8px;
+
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#2dfc74;
+
+    box-shadow:0 0 8px #2dfc74;
+
+}
+
+/*======================================
+        EDUCATION
+=======================================*/
+
+.section p strong{
+
+    color:#2dfc74;
+
+}
+
+/*======================================
+        PROJECTS
+=======================================*/
+
+.right-column .section h4{
+
+    color:#ffffff;
+
+}
+
+.right-column .section p{
+
+    margin-bottom:14px;
+
+}
+
+/*======================================
+      CERTIFICATION BOX
+=======================================*/
+
+.right-column .section:nth-child(2){
+
+    padding-top:6px;
+
+}
+
+/*======================================
+      ACHIEVEMENT
+=======================================*/
+
+.right-column .section:last-child p{
+
+    color:#f4f4f4;
+
+    font-weight:500;
+
+}
+
+/*======================================
+      HOVER EFFECT
+=======================================*/
+
+.section:hover{
+
+    transition:.4s;
+
+    transform:translateY(-3px);
+
+}
+/*=========================================
+        FINAL GLOW EFFECT
+=========================================*/
+
+.resume-paper{
+
+    transition:.45s ease;
+
+}
+
+.resume-paper:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#41ff8c;
+
+    box-shadow:
+    0 0 18px rgba(65,255,140,.45),
+    0 0 45px rgba(65,255,140,.22),
+    inset 0 0 25px rgba(65,255,140,.08);
+
+}
+
+/*=========================================
+      PAPER TOP GLOW
+=========================================*/
+
+.resume-paper::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    right:-80px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(45,252,116,.08);
+
+    filter:blur(70px);
+
+    pointer-events:none;
+
+}
+
+/*=========================================
+       SECTION LINE
+=========================================*/
+
+.section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:45px;
+
+    height:3px;
+
+    background:#2dfc74;
+
+    border-radius:30px;
+
+    margin-top:8px;
+
+    box-shadow:0 0 8px rgba(45,252,116,.55);
+
+}
+
+/*=========================================
+       SCROLL BAR
+=========================================*/
+
+.resume-paper::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+.resume-paper::-webkit-scrollbar-thumb{
+
+    background:#2dfc74;
+
+    border-radius:20px;
+
+}
+
+.resume-paper::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+/*=========================================
+      LINK STYLE
+=========================================*/
+
+.contact a{
+
+    color:#d8d8d8;
+
+    text-decoration:none;
+
+}
+
+.contact a:hover{
+
+    color:#2dfc74;
+
+}
+
+/*=========================================
+       ICON ANIMATION
+=========================================*/
+
+.contact i{
+
+    transition:.3s;
+
+}
+
+.contact p:hover i{
+
+    transform:scale(1.2);
+
+    color:#41ff8c;
+
+}
+
+/*=========================================
+       RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.resume-paper{
+
+    width:100%;
+
+    min-height:auto;
+
+    padding:20px;
+
+}
+
+.resume-header{
+
+    grid-template-columns:1fr;
+
+}
+
+.resume-body{
+
+    grid-template-columns:1fr;
+
+}
+
+.left-column{
+
+    border-right:none;
+
+    padding-right:0;
+
+}
+
+.right-column{
+
+    padding-left:0;
+
+}
+
+.right-head{
+
+    border-left:none;
+
+    padding-left:0;
+
+    margin-top:20px;
+
+}
+
+.left-head::after{
+
+    display:none;
+
+}
+
+}
+
+/*=========================================
+       SMOOTH TRANSITION
+=========================================*/
+
+*{
+
+    transition:.3s ease;
+
+}
